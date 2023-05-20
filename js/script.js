@@ -45,7 +45,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+	'bgMusic': 'birdfish.mp3',
 });
 
 // Define the voice files used in the game.
@@ -120,6 +120,7 @@ monogatari.script ({
 	
 		'show scene langit with fadeIn', //tunjukkan scene dekat classroom dari scene object
 		'show character a default at center with fade-in duration 2s',
+		'play music bgMusic with loop',
 		'jump Scene1',
 	],
 
