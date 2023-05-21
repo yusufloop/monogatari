@@ -70,8 +70,14 @@ monogatari.assets ('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
-	classroom: 'classroom-3.png',
-	langit: 'School/langit-luar-kelas.png'
+	classroom: 'School/classroom-3.png',
+	langit: 'School/langit-luar-kelas.png',
+	classroom2: 'School/Classroom-2.png',
+	office: 'School/Office-1.png',
+	pameranKerjaya: 'School/Building-3.png',
+	bilikPameran: 'School/Building-4.png',
+	classroom3: 'School/Classroom-1.png',
+	classroom4: 'School/Classroom-11.png',
 });
 
 
@@ -137,13 +143,15 @@ monogatari.script ({
 	// The game starts here.
 	'Start': [ //untuk kau mula
 	
-		'show scene langit with fadeIn', //tunjukkan scene dekat classroom dari scene object
-		'show character a default at center with fade-in duration 2s',
+	
+		
 		'play music bgMusic with loop',
 		'jump Scene1',
 	],
 
 	'Scene1': [
+		'show scene classroom2 with fadeIn',
+		'show character a default at center with fade-in ',
 		'Pada suatu ketika, terdapat seorang pelajar bernama Azri yang mendapati sukar untuk memahami bagaimana kurikulum di sekolah dapat membantu mereka mencapai kerjaya yang berjaya. ',
 		'Azri sering berasa stres dan kurang motivasi dalam kelasnya, dan sukar untuk melihat hubungan antara apa yang mereka pelajari dengan matlamat masa depan mereka.',
 		'Azri merupakan seorang yang kreatif dengan minat dalam seni. Masa lapangnya diisi dengan menulis cerita, melukis kanvas berwarna-warni, dan menghasilkan melodinya sendiri dengan gitar.',
@@ -153,6 +161,7 @@ monogatari.script ({
 	],
 
 	'Scene2':[
+		'show scene office with fadeIn',
 		'Pada suatu hari, Azri memutuskan untuk berbincang dengan kaunselor sekolah tentang kebimbangannya.',
 		'show character a default at left with fadeIn',
 		'show character li default at right with fadeIn',
@@ -174,6 +183,7 @@ monogatari.script ({
 	],
 
 	'Scene3':[
+		'show scene pameranKerjaya with fadeIn',
 		'Di pameran kerjaya, Azri berasa kagum dengan pelbagai profesion yang dipamerkan.',
 		'Terdapat jurutera yang merancang teknologi terkini, doktor yang menyelamatkan nyawa, usahawan yang menjalankan perniagaan yang berjaya, dan juga ahli sains yang menyelidik penemuan baharu. ',
 		' Ketika Azri meneroka gerai-gerai yang dipamerkan, dia mendapat peluang untuk berbual dengan pakar dari bidang yang berbeza dan mempelajari perjalanan pendidikan mereka.',
@@ -192,6 +202,7 @@ monogatari.script ({
 		'jump QuestionScene3',
 	],
 	'Scene4': [
+		'show scene bilikPameran with fadeIn',
 		'show character a default at left with fadeIn',
 		'show character aa default at right with fadeIn',
 		
@@ -211,6 +222,7 @@ monogatari.script ({
 	],
 	
 	'Scene5':[
+		'show scene classroom3 with fadeIn',
 		'Bersenjatakan perspektif baru ini, Azri kembali ke kelas-kelas mereka dengan semangat yang baru.',
 		'Mereka mulai melihat nilai dalam setiap subjek dan bekerja keras untuk berjaya dalam kelas-kelas mereka. ',
 		'Azri menyedari bahawa walaupun subjek seperti matematik dan sains, yang mungkin tidak berkaitan dengan impian seni mereka, setidaknya ia mampu kemahiran seperti pemikiran kritis, penyelesaian masalah, dan komunikasi yang efektif yang bernilai dalam apa jua kerjaya.',
@@ -221,6 +233,7 @@ monogatari.script ({
 	],
 
 	'Scene6':[
+		'show scene classroom4 with fadeIn',
 		'Setelah 2 tahun berlalu, dan Azri tamat belajar dari sekolah dengan kepujian.',
 		' Dedikasi dan usaha keras mereka berbalas, dan mereka diterima di sebuah kolej seni yang terkenal.',
 		'Di sana, Azri terus memupuk bakat kreatif mereka sambil mengambil manfaat dari pengetahuan yang mereka peroleh melalui pendidikan yang seimbang.',
