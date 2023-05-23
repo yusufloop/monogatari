@@ -161,6 +161,7 @@ monogatari.script ({
 	],
 
 	'Scene2':[
+		
 		'show scene office with fadeIn',
 		'Pada suatu hari, Azri memutuskan untuk berbincang dengan kaunselor sekolah tentang kebimbangannya.',
 		'show character a default at left with fadeIn',
